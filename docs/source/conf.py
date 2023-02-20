@@ -1,5 +1,11 @@
 # Configuration file for the Sphinx documentation builder.
 
+import os
+import sys
+
+# path to repo-head
+sys.path.insert(0, os.path.abspath('../..'))
+
 # -- Project information
 
 project = 'TestDocMonster'
@@ -12,12 +18,14 @@ version = '0.1.0'
 # -- General configuration
 
 extensions = [
+    'sphinx.ext.autodoc',
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
-    'sphinx.ext.autodoc',
+    'sphinx.ext.todo',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
+    'sphinx.ext.viewcode',
 ]
 
 intersphinx_mapping = {
@@ -26,9 +34,9 @@ intersphinx_mapping = {
 }
 intersphinx_disabled_domains = ['std']
 
-html_static_path = []
+html_static_path = ['_static']
 
-templates_path = [] # ['_templates']
+templates_path = ['_templates']
 
 # -- Options for HTML output
 
