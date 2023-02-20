@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'TestDocMonster'
+copyright = '2099, Sherbrooke'
+author = 'Charles at NRCAN'
 
 release = '0.1'
 version = '0.1.0'
